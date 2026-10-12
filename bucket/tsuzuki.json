@@ -1,0 +1,26 @@
+{
+    "version": "0.5.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/EmoFa/tsuzuki/releases/download/v0.5.0/tsuzuki_0.5.0_windows_amd64.zip",
+            "bin": [
+                "tsuzuki.exe"
+            ],
+            "hash": "71413e82b9b9c64a7fca2551b61ec73340bdfdfd26be64a1a1162bfe145c2d78"
+        },
+        "arm64": {
+            "url": "https://github.com/EmoFa/tsuzuki/releases/download/v0.5.0/tsuzuki_0.5.0_windows_arm64.zip",
+            "bin": [
+                "tsuzuki.exe"
+            ],
+            "hash": "2aaa6cd6d7fe051fad2ddae916d7e08a70bbde7bf4ba424f77bf5da9ca261ff2"
+        }
+    },
+    "homepage": "https://github.com/EmoFa/tsuzuki",
+    "license": "MIT",
+    "description": "Watch anime from your terminal in mpv, with AniList tracking",
+    "post_install": [
+        "Write-Host 'tsuzuki needs mpv to play anything: scoop install extras/mpv'",
+        "Write-Host 'Then run: tsuzuki doctor'"
+    ]
+}
